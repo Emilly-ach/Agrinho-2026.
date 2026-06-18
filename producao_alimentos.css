@@ -1,0 +1,271 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #012030; /* Azul muito escuro para o texto principal */
+    background-color: #FFFFFF; /* Fundo branco puro */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+h2 {
+    color: #13678A; /* Azul médio para os títulos H2 */
+    margin-bottom: 0.75rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #012030; /* Azul muito escuro para os parágrafos */
+}
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(1, 32, 48, 0.1); /* Sombra mais sutil com base no azul escuro */
+}
+
+/* Estilos específicos da seção de produção */
+.conteudo-principal-producao {
+    background-color: #FFFFFF; /* Fundo branco puro para a seção */
+    border-radius: 8px;
+    box-shadow: 0 0.5rem 1rem rgba(1, 32, 48, 0.08); /* Sombra mais leve */
+    overflow: hidden;
+}
+
+.feature-item {
+    padding: 2rem 0;
+    border-bottom: 1px solid #DAFDBA; /* Verde bem clarinho para a linha divisória */
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+.feature-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.feature-item .col-md-6:first-child {
+    padding-right: 1.5rem;
+}
+
+.feature-item .col-md-6:last-child {
+    padding-left: 1.5rem;
+}
+
+.feature-item i {
+    margin-right: 0.5rem;
+    color: #45C4B0; /* Verde água para os ícones */
+}
+
+
+/* Bloco de destaque final */
+.bloco-destaque-producao {
+    padding: 3rem 2rem;
+    background-color: #DAFDBA; /* Verde bem clarinho para o fundo do bloco de destaque */
+    border-top: 2px solid #9AEBA3; /* Verde claro para a borda superior */
+    border-bottom: 2px solid #9AEBA3; /* Verde claro para a borda inferior */
+    border-radius: 6px;
+}
+
+.bloco-destaque-producao h3 {
+    color: #13678A; /* Azul médio para o título H3 do destaque */
+    margin-bottom: 1rem;
+}
+
+.btn-primary-producao {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #13678A; /* Borda do botão azul médio */
+    color: #FFFFFF; /* Texto do botão branco */
+    background-color: #13678A; /* Fundo do botão azul médio */
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary-producao:hover {
+    background-color: #012030; /* Azul muito escuro no hover */
+    border-color: #012030; /* Borda azul muito escura no hover */
+    color: #DAFDBA; /* Texto verde bem clarinho no hover */
+}
+
+/* Adaptações para telas menores */
+@media (max-width: 768px) {
+    .feature-item .col-md-6 {
+        margin-bottom: 1.5rem;
+    }
+    .feature-item .col-md-6:first-child,
+    .feature-item .col-md-6:last-child {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #012030;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    animation: fadeInDown 1.5s ease;
+}
+
+.subtitulo {
+    color: #9AEBA3;
+    animation: fadeInUp 2s ease;}
+
+/* ---------- Navbar geral ---------- */
+.navbar {
+    background-color: #45C4B0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ---------- Container do botão + menu ---------- */
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Mantém o espaçamento entre o botão e o menu */
+    position: relative; /* Ainda útil para posicionamento futuro, se necessário */
+}
+
+/* ---------- Botão Menu ---------- */
+.menu-button {
+    background-color: #012030;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 2; /* Garante que o botão fique acima */
+}
+
+.menu-button:hover {
+    background-color: #13678A;
+    transform: scale(1.05);
+}
+
+/* ---------- Checkbox escondido ---------- */
+#menu-toggle {
+    display: none;
+}
+
+/* ---------- Menu escondido inicialmente ---------- */
+.menu {
+    list-style: none;
+    display: flex; /* Permanece flex */
+    gap: 20px; /* Adiciona espaçamento entre os itens do menu */
+    opacity: 0;
+    transform: translateY(-10px); /* Mantém a transição sutil */
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ---------- Quando o menu está ativo ---------- */
+#menu-toggle:checked + .menu-button + .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+/* ---------- Estilo dos links do menu ---------- */
+.menu li a {
+    background-color: #012030; /* Mantém o fundo dos links na cor escura */
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px; /* Mantém o formato arredondado dos links */
+    transition: background-color 0.3s, transform 0.3s;
+    border: none; /* Garante que não tenha borda */
+    display: inline-block; /* Importante para que padding e margem funcionem bem */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ---------- Hover nos links ---------- */
+.menu li a:hover {
+    background-color: #13678A;
+    transform: scale(1.05); /* Mantém o pequeno aumento no hover */
+}
+/* Classes de Imagem (DEFINIÇÕES QUE VOCÊ PEDIU) */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Garante que a imagem não tenha espaços extras abaixo dela */
+}
+
+.rounded {
+    border-radius: 0.75rem; /* Bordas mais arredondadas */
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(1, 32, 48, 0.175); /* Sombra maior e mais escura, baseada no azul escuro */
+}
+/* Garante que o texto dentro de <strong> fique em negrito */
+strong {
+    font-weight: bold; /* Ou use 700 para um negrito mais forte */
+}
+
+/* Footer */
+footer {
+    background-color: #012030;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+p2 {
+    color: #ffffff; 
+}
+/* Animações */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}

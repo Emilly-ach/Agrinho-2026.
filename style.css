@@ -1,0 +1,450 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #012030;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 3rem;
+    animation: fadeInDown 1.5s ease;
+}
+
+.subtitulo {
+    color: #9AEBA3;
+    animation: fadeInUp 2s ease;
+}
+
+/* ---------- Reset básico ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Navbar geral ---------- */
+.navbar {
+    background-color: #45C4B0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ---------- Container do botão + menu ---------- */
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Mantém o espaçamento entre o botão e o menu */
+    position: relative; /* Ainda útil para posicionamento futuro, se necessário */
+}
+
+/* ---------- Botão Menu ---------- */
+.menu-button {
+    background-color: #012030;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+    z-index: 2; /* Garante que o botão fique acima */
+}
+
+.menu-button:hover {
+    background-color: #13678A;
+    transform: scale(1.05);
+}
+
+/* ---------- Checkbox escondido ---------- */
+#menu-toggle {
+    display: none;
+}
+
+/* ---------- Menu escondido inicialmente ---------- */
+.menu {
+    list-style: none;
+    display: flex; /* Permanece flex */
+    gap: 20px; /* Adiciona espaçamento entre os itens do menu */
+    opacity: 0;
+    transform: translateY(-10px); /* Mantém a transição sutil */
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ---------- Quando o menu está ativo ---------- */
+#menu-toggle:checked + .menu-button + .menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+/* ---------- Estilo dos links do menu ---------- */
+.menu li a {
+    background-color: #012030; /* Mantém o fundo dos links na cor escura */
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 50px; /* Mantém o formato arredondado dos links */
+    transition: background-color 0.3s, transform 0.3s;
+    border: none; /* Garante que não tenha borda */
+    display: inline-block; /* Importante para que padding e margem funcionem bem */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* ---------- Hover nos links ---------- */
+.menu li a:hover {
+    background-color: #13678A;
+    transform: scale(1.05); /* Mantém o pequeno aumento no hover */
+}
+
+
+
+
+/* Seção */
+.container {
+    padding: 40px 20px;
+}
+
+.titulo-secao {
+    color: #13678A;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #012030;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+p2 {
+    color: #ffffff; 
+}
+
+/* Animações */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* Estilos para a Seção Principal Modificada com Imagens/Ícones Laterais */
+.secao-principal {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-principal {
+    color: #012030; /* Verde mais vibrante */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Centralizei o título */
+}
+
+.subtitulo-principal {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center; /* Centralizei o subtítulo */
+}
+
+.texto-principal {
+    padding-right: 30px; /* Espaço para o texto não ficar colado na imagem */
+}
+
+/* Estilos Gerais para as Seções */
+.secao-geral {
+    background-color: #f7f7f7; /* Cor de fundo comum para as seções */
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 40px; /* Espaçamento entre as seções */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Títulos Comuns */
+.titulo-secao { /* Usado como base, pode ser sobrescrito */
+    color: #012030;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilos para a Seção Principal */
+.secao-principal .titulo-principal {
+    font-size: 2.5rem;
+}
+
+.secao-principal .subtitulo-principal {
+    color: #6c757d;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.secao-principal .texto-principal {
+    padding-right: 30px;
+}
+
+.secao-principal .bloco-info.com-imagem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #45C4B0;
+}
+
+.secao-principal .icone-bloco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    height: 50px;
+    color: #28a745;
+    font-size: 2.2rem;
+    border-radius: 50%;
+}
+
+.secao-principal .icone-bloco.esquerda {
+    margin-right: 15px;
+}
+
+.secao-principal .icone-bloco.direita {
+    margin-left: 15px;
+}
+
+.secao-principal .texto-bloco {
+    flex-grow: 1;
+}
+
+.secao-principal .bloco-info h3 {
+    color: #343a40;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.secao-principal .bloco-info p {
+    color: #495057;
+    line-height: 1.7;
+}
+
+.secao-principal .imagem-destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-principal .imagem-destaque img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.secao-principal .mensagem-final {
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilos para a Seção de Cards */
+.secao-cards {
+    /* O background-color está no .secao-geral agora */
+    padding-bottom: 80px; /* Mais espaço abaixo dos cards */
+}
+
+.secao-cards .titulo-cards {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.secao-cards .titulo-cards::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #45C4B0;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+.secao-cards .card-custom {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-cards .card-custom:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.secao-cards .card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.95);
+    transition: filter 0.3s ease-in-out;
+}
+
+.secao-cards .card-custom:hover .card-img-top {
+    filter: brightness(1.05);
+}
+
+.secao-cards .card-body {
+    padding: 25px;
+}
+
+.secao-cards .card-title {
+    color: #012030;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.secao-cards .card-title i {
+    color: #45C4B0;
+    font-size: 1.8rem;
+}
+
+.secao-cards .card-text {
+    color: #495057;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.secao-cards .btn-custom {
+    background-color: #13678A;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    border: none;
+}
+
+.secao-cards .btn-custom:hover {
+    background-color: #012030;
+    transform: translateY(-3px);
+    color: white;
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+    .secao-principal .texto-principal {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .secao-principal .bloco-info.com-imagem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .secao-principal .icone-bloco.esquerda,
+    .secao-principal .icone-bloco.direita {
+        margin: 0 0 10px 0;
+        width: auto;
+        height: auto;
+        font-size: 2rem;
+    }
+
+    .secao-principal .texto-bloco {
+        padding: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .secao-cards .titulo-cards {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .secao-cards .card-custom {
+        margin-bottom: 25px;
+    }
+}
+/* Classes de Imagem (DEFINIÇÕES QUE VOCÊ PEDIU) */
+.img-fluid {
+    max-width: 100%;
+    height: 500px;
+    display: block; /* Garante que a imagem não tenha espaços extras abaixo dela */
+}
+
+.rounded {
+    border-radius: 0.75rem; /* Bordas mais arredondadas */
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(1, 32, 48, 0.175); /* Sombra maior e mais escura, baseada no azul escuro */
+}
+/* Estilos para as imagens dentro dos blocos de feature-item */
+.feature-item img {
+    /* Define uma altura mínima para a imagem.
+       Ajuste este valor (300px, 40vh, etc.) para o que você achar melhor. */
+    min-height: 800px; /* Aumentei um pouco mais para um efeito mais visível */
+    
+    /* Garante que a imagem cubra a área definida sem distorcer, cortando se necessário */
+    object-fit: cover; 
+    
+    /* Ocupa a largura total do contêiner da imagem */
+    width: 100%; 
+    
+    /* Mantém a altura automática para flexibilidade */
+    height: auto; 
+    
+    /* Seus estilos existentes (display: block, border-radius, box-shadow)
+       já estão sendo aplicados via .img-fluid, .rounded e .shadow-lg */
+}
+
+/* Opcional: Para que a coluna de texto tenha a mesma altura da imagem */
+.feature-item {
+    display: flex; /* Transforma o feature-item em um container flexível */
+    align-items: stretch; /* Faz com que os itens (colunas) se estiquem para ter a mesma altura */
+}

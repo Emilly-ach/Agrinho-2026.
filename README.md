@@ -1,65 +1,80 @@
-A Essencial Conexão entre o Verde Campo e o Cinza da Cidade
 
-Projeto: Agrinho 2025 - Festejando Conexão Campo Cidade
-Este projeto é uma página web informativa e interativa desenvolvida para celebrar e explorar a essencial conexão entre o campo e a cidade. Através de um design visual e conteúdo claro, o site destaca a importância dessa união para um futuro sustentável e próspero para todos.
+# Agro Forte, Futuro Sustentável: Equilíbrio entre Produção e Meio Ambiente
 
-Estrutura do Projeto
-Tecnologias Utilizadas:
+## Projeto: Agrinho 2026 - O Desafio do Século
 
-HTML: Define a estrutura principal e o conteúdo da página.
-CSS: Responsável pela estilização visual, garantindo um design atraente e responsivo.
-Bootstrap: Framework CSS para componentes e layout responsivo.
-Font Awesome: Ícones que enriquecem visualmente as seções e blocos de informação.
-JavaScript: Adiciona interatividade, como a funcionalidade do menu e a recarga da página ao registrar um comentário.
-Arquivos:
+Este projeto é uma plataforma web informativa e interativa desenvolvida especialmente para o Concurso Agrinho 2026. Através de um design visual moderno, limpo e conteúdo científico claro, o site destaca a importância vital de unir o avanço tecnológico do agronegócio à preservação ativa dos ecossistemas, promovendo o verdadeiro equilíbrio ecológico para garantir um futuro próspero e sustentável para as próximas gerações.
 
-index.html: O arquivo principal que contém a estrutura da página inicial.
-producao_alimentos.html: (Página futura ou placeholder para conteúdo relacionado à produção de alimentos).
-acessibilidade_agua.html: (Página futura ou placeholder para conteúdo relacionado à acessibilidade à água).
-sustentabilidade.html: (Página futura ou placeholder para conteúdo relacionado à sustentabilidade, embora a página inicial já aborde o tema).
-style.css: O arquivo que contém todos os estilos personalizados para formatar a aparência da página.
-Descrição das Seções
-Cabeçalho (Header):
+## 🛠️ Estrutura do Projeto e Tecnologias Utilizadas
 
-Título principal: "Agrinho 2025".
-Subtítulo: "Festejando Conexão Campo Cidade", que estabelece o tema central do evento e do site.
-Navegação (Navbar):
+O projeto foi construído utilizando **tecnologias puras (Vanilla Web)**, respeitando estritamente o regulamento do concurso que proíbe o uso de frameworks de programação (como React ou jQuery) e veda códigos inline:
 
-Um menu hamburguer responsivo que se expande, oferecendo links para: "Página Inicial", "Produção de Alimentos", "Acessibilidade à Água" e "Sustentabilidade".
-Seção Principal (Conteúdo Central):
+* **HTML5:** Define a estrutura semântica principal e todo o novo conteúdo pedagógico focado no tema de 2026.
+* **CSS3:** Responsável pela estilização visual personalizada, tipografia e pela harmonia de cores voltadas à sustentabilidade.
+* **Bootstrap 5:** Utilizado exclusivamente como facilitador de layout responsivo (grades) e componentes utilitários de design.
+* **Font Awesome 6:** Ícones vetoriais que enriquecem visualmente as seções, facilitando a leitura e a acessibilidade.
+* **JavaScript (Vanilla JS):** Arquivo externo dedicado que adiciona interatividade avançada, escuta de eventos moderna, validação completa de dados do formulário e manipulação dinâmica do DOM (sem recarregamentos frios da página).
 
-Um título chamativo "A Essencial Conexão entre o Verde Campo e o Cinza da Cidade" com ícones de trator e cidade, reforçando o tema.
-Um parágrafo de introdução convidando o usuário a descobrir a importância dessa união.
-Três blocos informativos detalhados, cada um com ícones temáticos, explicando:
-"O Pulso Verde da Inovação Rural": Aborda a tecnologia no campo, agricultura de precisão e manejo sustentável.
-"A Mão Urbana no Desenvolvimento do Campo": Explora como o desenvolvimento urbano impulsiona o campo através de demanda e infraestrutura.
-"Sustentabilidade": Destaca a importância da preservação ambiental e a colaboração entre campo e cidade para um planeta saudável.
-Uma imagem lateral ilustrativa que representa a conexão entre o campo e a cidade.
-Tópicos Fundamentais (Seção de Cards):
+### 📁 Arquivos do Sistema:
 
-Apresenta três cards interativos com imagens e descrições concisas sobre temas essenciais:
-"Sustentabilidade no Campo": Foco em práticas de preservação e bem-estar rural.
-"Energia e Meio Ambiente": Discussão sobre fontes de energia limpa e desenvolvimento rural verde.
-"Tecnologia e Inovação Agrícola": Aborda o impacto da tecnologia no agronegócio e na produtividade.
-Cada card possui um botão "Descobrir Mais" que leva a links externos (exemplos) para aprofundamento.
-Deixe seu Comentário (Seção Interativa):
+* `index.html`: O arquivo principal que contém a estrutura da página inicial do ecossistema sustentável.
+* `producao_alimentos.html`: Página dedicada ao detalhamento da Produção Sustentável e técnicas de cultivo consciente.
+* `acessibilidade_agua.html`: Página com foco na Gestão Hídrica e proteção de mananciais no campo.
+* `sustentabilidade.html`: Página aprofundada sobre o Equilíbrio Ecológico, biodiversidade e o papel do produtor como guardião.
+* `style.css`: O arquivo que centraliza todas as estilizações personalizadas da interface.
+* `script.js`: Arquivo **100% externo** onde está concentrada toda a lógica de interatividade e inteligência do site, eliminando atributos inline (como `onclick`).
 
-Um espaço dedicado para o usuário opinar e comentar sobre o site.
-Inclui campos para nome, tipo de feedback (elogio, sugestão, dúvida, problema), uma área de texto para o comentário e opções de rádio para indicar se gostou do site.
-O botão "Registrar Opinião" recarrega a página ao ser clicado, simulando uma ação de registro (sem envio real de dados).
-Rodapé (Footer):
+---
 
-Contém uma mensagem de direitos reservados: "Todos os direitos reservados - Agrinho 2025 | Festejando a conexão campo cidade."
-Como Rodar o Projeto
-Clone ou faça o download do repositório do projeto.
-Abra o arquivo index.html em um navegador de sua escolha.
-Contribuições
-Se você deseja contribuir para este projeto, por favor, siga as etapas abaixo:
+## 📝 Descrição das Seções (Página Inicial)
 
-Faça um fork deste repositório.
-Crie uma nova branch para sua feature ou correção: git checkout -b minha-nova-feature.
-Faça o commit das suas mudanças: git commit -am 'Adiciona nova funcionalidade'.
-Envie a branch para o repositório remoto: git push origin minha-nova-feature.
-Abra um Pull Request.
-Licença
-Este projeto está licenciado sob a MIT License.
+### Cabeçalho (Header):
+
+* **Título principal:** "Agrinho".
+* **Subtítulo:** "Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente", estabelecendo de forma imediata o tema oficial de 2026.
+
+### Navegação (Navbar):
+
+* Um menu responsivo estilo hambúrguer adaptado para as três vertentes do novo tema: "Página Inicial", "Produção Sustentável", "Gestão Hídrica" e "Equilíbrio Ecológico".
+
+### Seção Principal (O Desafio do Século):
+
+Apresenta uma introdução impactante sobre a produção de alimentos em harmonia com a natureza através de três blocos de informações ricamente ilustrados com ícones:
+
+1. **"🌱 Agricultura de Precisão e Baixo Carbono":** Aborda a otimização de insumos via drones e sensores inteligentes para reduzir as emissões de gases poluentes.
+2. **"🔄 Manejo Integrado e Conservação do Solo":** Explica técnicas como o Plantio Direto e o sistema ILPF para produzir mais sem avançar sobre florestas nativas.
+3. **"💧 Preservação dos Recursos Hídricos":** Destaca sistemas eficientes de irrigação (gotejamento) e a proteção de nascentes pelo produtor rural.
+
+### Pilares do Desenvolvimento Sustentável (Cards Informativos):
+
+Apresenta três cards interativos de aprofundamento com links diretos para portais científicos reais da **Embrapa** e órgãos oficiais:
+
+* **Preservação e Biodiversidade:** O papel da fauna nativa no controle biológico de pragas.
+* **Matriz Energética Limpa:** A aplicação prática de placas solares e o uso do biogás no meio rural.
+* **Bioinsumos e Biotecnologia:** A ciência desenvolvendo defensivos a partir de microrganismos.
+
+### Painel de Sustentabilidade (Seção Interativa JavaScript):
+
+Um espaço interativo onde alunos e visitantes podem deixar contribuições, ideias e feedbacks ecológicos.
+
+* **Aprimoramento Técnico:** Diferente do modelo anterior que apenas recarregava a página limpando os dados, a lógica atual em JavaScript intercepta o envio (`submit`), valida se todos os campos obrigatórios estão preenchidos, impede o comportamento padrão de reset imediato, lê os dados do usuário e imprime dinamicamente na tela uma mensagem personalizada de sucesso e engajamento socioambiental.
+
+### Rodapé (Footer):
+
+* Contém a assinatura de conformidade com o evento: *"Todos os direitos reservados © Concurso Agrinho | Desenvolvido com foco no Equilíbrio e Sustentabilidade."*
+
+---
+
+## 🚀 Como Rodar o Projeto
+
+1. Faça o download da pasta do projeto contendo todos os arquivos estruturados.
+2. Certifique-se de manter os arquivos `index.html`, `style.css` e `script.js` no mesmo diretório raiz (na mesma pasta).
+3. Abra o arquivo `index.html` em qualquer navegador web moderno de sua preferência.
+
+## 🤝 Contribuições
+
+Este repositório foi estruturado seguindo as diretrizes pedagógicas e técnicas exigidas pelas bancas avaliadoras do SENAR-PR e SEED-PR para a categoria de Programação da Rede Estadual de Ensino do Paraná.
+
+## ⚖️ Licença
+
+Este projeto está licenciado sob a **MIT License**.
